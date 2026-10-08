@@ -1,0 +1,16 @@
+{
+  "name": "任德荣 · 生信分析师 & AI Agent 开发者",
+  "short_name": "任德荣",
+  "description": "生物信息分析 × AI Agent 开发。转录组 / 单细胞 / 空间转录组 / GWAS 全流程；独立开发 GraphRAG + LangGraph 高考志愿 Agent。",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "icons": [
+    {
+      "src": "img/og-image.png",
+      "sizes": "1200x630",
+      "type": "image/png"
+    }
+  ]
+}
