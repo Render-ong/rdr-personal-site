@@ -90,6 +90,59 @@
     [data-spot]:hover .spot { opacity: 1; }
     [data-spot][data-tilt] { transform-style: preserve-3d; will-change: transform; }
 
+    /* 导航栏水滴照片框 */
+    .photo-drop {
+      position: fixed; top: 96px; left: 50%; margin-left: -93px; z-index: 45;
+      opacity: 0; visibility: hidden;
+      will-change: transform, opacity; pointer-events: none;
+    }
+    .photo-drop.is-open { opacity: 1; visibility: visible; pointer-events: auto; }
+    .photo-drop__toggle {
+      position: fixed; top: 96px; left: 50%; margin-left: -17px; z-index: 44;
+      width: 34px; height: 34px; padding: 0;
+      display: flex; align-items: center; justify-content: center;
+      border: 1px solid rgba(255,255,255,.18);
+      background: linear-gradient(160deg, #1a1a21, #0a0a0e);
+      border-radius: 11px 11px 50% 50% / 11px 11px 42% 42%;
+      box-shadow: 0 12px 28px -14px rgba(0,0,0,.9), 0 0 24px -12px rgba(125,211,232,.5);
+      cursor: pointer; opacity: 0; visibility: hidden;
+      transition: opacity .35s, visibility .35s, border-color .25s;
+    }
+    .photo-drop__toggle::before {
+      content: ""; border-left: 6px solid transparent; border-right: 6px solid transparent;
+      border-top: 8px solid rgba(255,255,255,.72);
+    }
+    .photo-drop__toggle.is-shown { opacity: 1; visibility: visible; }
+    .photo-drop__toggle:hover { border-color: rgba(255,255,255,.4); }
+    .photo-drop__bubble {
+      position: relative; width: 170px; padding: 7px;
+      background: linear-gradient(160deg, #1a1a21, #0a0a0e);
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: 18px 18px 50% 50% / 18px 18px 34% 34%;
+      box-shadow: 0 24px 55px -22px rgba(0,0,0,.92), 0 0 44px -16px rgba(125,211,232,.5);
+    }
+    .photo-drop__bubble::before {
+      content: ""; position: absolute; top: -8px; left: 50%;
+      width: 15px; height: 15px; transform: translateX(-50%) rotate(45deg);
+      background: #1a1a21; border-left: 1px solid rgba(255,255,255,.16); border-top: 1px solid rgba(255,255,255,.16);
+      border-radius: 3px 0 0 0;
+    }
+    .photo-drop__bubble img {
+      display: block; width: 100%; border-radius: 12px 12px 50% 50% / 12px 12px 30% 30%;
+    }
+    .photo-drop__bubble::after {
+      content: ""; position: absolute; inset: 7px; pointer-events: none;
+      border-radius: 12px 12px 50% 50% / 12px 12px 30% 30%;
+      background: rgba(7,8,12,.32);
+    }
+    .photo-drop__close {
+      position: absolute; top: 7px; right: 7px; z-index: 2;
+      width: 22px; height: 22px; padding: 0; line-height: 1;
+      border-radius: 50%; border: 1px solid rgba(255,255,255,.28);
+      background: rgba(10,10,14,.72); color: #fff; font-size: 14px; cursor: pointer;
+    }
+    .photo-drop__close:hover { background: rgba(255,255,255,.18); }
+
     /* 时间线竖线随进入绘制 */
     #tl-line { transform: scaleY(0); transform-origin: top; transition: transform 1.4s cubic-bezier(.4,0,.2,1); }
     #tl-line.drawn { transform: scaleY(1); }
@@ -264,6 +317,15 @@
       </div>
     </div>
   </header>
+
+  <!-- 导航栏水滴照片框 -->
+  <div id="photo-drop" class="photo-drop" aria-hidden="true">
+    <div class="photo-drop__bubble">
+      <button class="photo-drop__close" type="button" aria-label="收起照片">&times;</button>
+      <img src="img/avatar-cut.webp" alt="任德荣" width="900" height="1200" />
+    </div>
+  </div>
+  <button id="photo-drop-toggle" class="photo-drop__toggle" type="button" aria-label="展开照片"></button>
 
   <main id="main">
 

@@ -102,6 +102,70 @@
     });
   });
 
+  /* 11. 导航栏水滴照片框：掉落 → 停留 5s → 折叠收起（留三角形展开按钮） */
+  (function photoDrop() {
+    var drop = document.getElementById("photo-drop");
+    var toggle = document.getElementById("photo-drop-toggle");
+    if (!drop || !toggle) return;
+    var header = document.getElementById("main-header");
+
+    /* 滚动时导航栏会缩高（main.js 切 pt-12 → py-4），top 需跟着走 */
+    var lastTop = "";
+    function syncTop() {
+      var h = header ? header.offsetHeight : 0;
+      var top = (h > 20 ? h + 10 : 96) + "px";
+      if (top === lastTop) return;
+      lastTop = top;
+      drop.style.top = top;
+      toggle.style.top = top;
+    }
+
+    /* 落在「团队」与「联系我」之间；窄屏或元素隐藏时回落到页面居中 */
+    function place() {
+      syncTop();
+      var team = document.querySelector('#main-nav a[href="#pricing"]');
+      var cta = document.querySelector('#main-nav > a[href="#contact"]');
+      var mid = null;
+      if (team && cta && team.offsetParent !== null && cta.offsetParent !== null) {
+        mid = (team.getBoundingClientRect().right + cta.getBoundingClientRect().left) / 2;
+      }
+      drop.style.left = mid === null ? "50%" : mid + "px";
+      drop.style.marginLeft = -(drop.offsetWidth / 2) + "px";
+      toggle.style.left = mid === null ? "50%" : mid + "px";
+      toggle.style.marginLeft = -(toggle.offsetWidth / 2) + "px";
+    }
+    place();
+    window.addEventListener("resize", place, { passive: true });
+    window.addEventListener("scroll", syncTop, { passive: true });
+
+    var closeBtn = drop.querySelector(".photo-drop__close");
+    var timer;
+    function fold() {
+      clearTimeout(timer);
+      drop.setAttribute("aria-hidden", "true");
+      if (animated) {
+        gsap.to(drop, { y: -170, opacity: 0, duration: 0.6, ease: "power3.in",
+          onComplete: function () { drop.classList.remove("is-open"); toggle.classList.add("is-shown"); } });
+      } else {
+        drop.classList.remove("is-open");
+        toggle.classList.add("is-shown");
+      }
+    }
+    function open() {
+      clearTimeout(timer);
+      toggle.classList.remove("is-shown");
+      drop.removeAttribute("aria-hidden");
+      drop.classList.add("is-open");
+      if (animated) {
+        gsap.fromTo(drop, { y: -170, opacity: 0 }, { y: 0, opacity: 1, duration: 1.1, ease: "back.out(1.45)" });
+      }
+      timer = setTimeout(fold, 5000);
+    }
+    if (closeBtn) closeBtn.addEventListener("click", fold);
+    toggle.addEventListener("click", open);
+    setTimeout(open, 1400);
+  })();
+
   if (!animated) return;
 
   /* 4. Hero 标题逐字解码（等 Hero 淡入后再启动，避免被父级 opacity 动画遮住） */
