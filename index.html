@@ -142,6 +142,10 @@
       background: rgba(10,10,14,.72); color: #fff; font-size: 14px; cursor: pointer;
     }
     .photo-drop__close:hover { background: rgba(255,255,255,.18); }
+    /* 移动端：桌面导航项不显示，照片框没有锚点可依附，会掉到屏幕中央挡住 Hero，直接隐藏 */
+    @media (max-width: 767px) {
+      .photo-drop, .photo-drop__toggle { display: none !important; }
+    }
 
     /* 时间线竖线随进入绘制 */
     #tl-line { transform: scaleY(0); transform-origin: top; transition: transform 1.4s cubic-bezier(.4,0,.2,1); }

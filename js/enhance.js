@@ -107,6 +107,8 @@
     var drop = document.getElementById("photo-drop");
     var toggle = document.getElementById("photo-drop-toggle");
     if (!drop || !toggle) return;
+    /* 移动端照片框被 CSS 隐藏（桌面导航项不显示，无锚点可依附），跳过位置计算与动画 */
+    if (window.matchMedia("(max-width: 767px)").matches) return;
     var header = document.getElementById("main-header");
 
     /* 滚动时导航栏会缩高（main.js 切 pt-12 → py-4），top 需跟着走 */
