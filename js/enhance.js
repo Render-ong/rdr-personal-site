@@ -123,7 +123,7 @@
     /* 落在「团队」与「联系我」之间；窄屏或元素隐藏时回落到页面居中 */
     function place() {
       syncTop();
-      var team = document.querySelector('#main-nav a[href="#pricing"]');
+      var team = document.querySelector('#main-nav a[href="#why-us"]');
       var cta = document.querySelector('#main-nav > a[href="#contact"]');
       var mid = null;
       if (team && cta && team.offsetParent !== null && cta.offsetParent !== null) {
@@ -230,9 +230,8 @@
         if (!el.hasAttribute("data-stagger")) {
           gsap.fromTo(el, { y: 26, opacity: 0 }, { y: 0, opacity: 1, duration: 0.85, delay: delay });
         } else {
-          if (el.hasAttribute("data-animate")) {
-            gsap.fromTo(el, { opacity: 0 }, { opacity: 1, duration: 0.7, delay: delay });
-          }
+          /* 容器自己也被 gsap.set 归零过，必须还原，否则只有 data-stagger 的块会永久隐形 */
+          gsap.fromTo(el, { opacity: 0 }, { opacity: 1, duration: 0.7, delay: delay });
           gsap.fromTo(el.children, { y: 14, opacity: 0, scale: 0.97 },
             { y: 0, opacity: 1, scale: 1, duration: 0.5, stagger: 0.05, delay: delay + 0.12, ease: "back.out(1.6)" });
         }
@@ -279,8 +278,9 @@
 
   /* 10. 导航滚动高亮 */
   if ("IntersectionObserver" in window) {
+    /* 只接管真正的导航项：Logo 和「联系我」胶囊没有 text-muted-foreground，不该被改色 */
     var navLinks = Array.prototype.slice.call(
-      document.querySelectorAll('#main-nav a[href^="#"], #mobile-menu a[href^="#"]')
+      document.querySelectorAll('#main-nav a.text-muted-foreground[href^="#"], #mobile-menu a[href^="#"]')
     );
     var seen = {};
     var secs = [];

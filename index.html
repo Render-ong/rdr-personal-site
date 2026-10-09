@@ -287,11 +287,11 @@
       <!-- Desktop links (centered) -->
       <div class="hidden items-center gap-8 md:flex absolute left-1/2 -translate-x-1/2">
         <a href="#about" class="text-sm text-muted-foreground hover:text-foreground transition-colors">关于</a>
-        <a href="#features" class="text-sm text-muted-foreground hover:text-foreground transition-colors">能力</a>
-        <a href="#team" class="text-sm text-muted-foreground hover:text-foreground transition-colors">两条线</a>
         <a href="#story" class="text-sm text-muted-foreground hover:text-foreground transition-colors">经历</a>
+        <a href="#team" class="text-sm text-muted-foreground hover:text-foreground transition-colors">能力</a>
+        <a href="#features" class="text-sm text-muted-foreground hover:text-foreground transition-colors">起点</a>
         <a href="#projects" class="text-sm text-muted-foreground hover:text-foreground transition-colors">项目</a>
-        <a href="#pricing" class="text-sm text-muted-foreground hover:text-foreground transition-colors">团队</a>
+        <a href="#why-us" class="text-sm text-muted-foreground hover:text-foreground transition-colors">团队</a>
       </div>
 
       <!-- CTA Button -->
@@ -308,11 +308,11 @@
     <div id="mobile-menu" aria-hidden="true" class="hidden border-t border-border bg-background px-6 py-4 md:hidden">
       <div class="flex flex-col gap-4">
         <a href="#about" class="text-sm text-muted-foreground hover:text-foreground transition-colors">关于</a>
-        <a href="#features" class="text-sm text-muted-foreground hover:text-foreground transition-colors">能力</a>
-        <a href="#team" class="text-sm text-muted-foreground hover:text-foreground transition-colors">两条线</a>
         <a href="#story" class="text-sm text-muted-foreground hover:text-foreground transition-colors">经历</a>
+        <a href="#team" class="text-sm text-muted-foreground hover:text-foreground transition-colors">能力</a>
+        <a href="#features" class="text-sm text-muted-foreground hover:text-foreground transition-colors">起点</a>
         <a href="#projects" class="text-sm text-muted-foreground hover:text-foreground transition-colors">项目</a>
-        <a href="#pricing" class="text-sm text-muted-foreground hover:text-foreground transition-colors">团队</a>
+        <a href="#why-us" class="text-sm text-muted-foreground hover:text-foreground transition-colors">团队</a>
         <a href="#contact" class="text-sm text-muted-foreground hover:text-foreground transition-colors">联系</a>
       </div>
     </div>
@@ -336,7 +336,10 @@
       <div class="mx-auto max-w-5xl px-6">
         <div class="grid grid-cols-1 lg:grid-cols-3" data-animate>
           <div class="lg:col-span-2">
-            <span class="inline-block rounded-full border border-white/30 px-4 py-1.5 text-xs font-medium tracking-wide mb-6">生物信息 × AI Agent</span>
+            <div class="flex flex-wrap items-center gap-3 mb-6">
+              <span class="inline-block rounded-full bg-white px-4 py-1.5 text-xs font-semibold tracking-wide text-black">构窗创始人 · AI 产品独立开发者</span>
+              <span class="inline-block rounded-full border border-white/30 px-4 py-1.5 text-xs font-medium tracking-wide">生物信息 × AI Agent</span>
+            </div>
             <h1 class="text-4xl font-medium tracking-tight sm:text-5xl lg:text-6xl">
               <span data-decode="我上，我也行。">我上，我也行。</span>
             </h1>
@@ -411,78 +414,6 @@
         </div>
       </div>
 
-      <!-- 数字统计条 -->
-      <div class="mx-auto max-w-5xl px-6 mt-16 md:mt-20">
-        <div class="grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-border bg-border md:grid-cols-4" data-animate data-stagger>
-          <div class="stat-num bg-background px-6 py-7">
-            <p class="text-3xl font-bold tracking-tight sm:text-4xl" data-count="15">15</p>
-            <p class="mt-2 text-sm text-muted-foreground">LangGraph 节点</p>
-          </div>
-          <div class="stat-num bg-background px-6 py-7">
-            <p class="text-3xl font-bold tracking-tight sm:text-4xl" data-count="2000" data-unit="万+">2000<span class="u">万+</span></p>
-            <p class="mt-2 text-sm text-muted-foreground">知识库字数</p>
-          </div>
-          <div class="stat-num bg-background px-6 py-7">
-            <p class="text-3xl font-bold tracking-tight sm:text-4xl" data-count="3" data-unit="端">3<span class="u">端</span></p>
-            <p class="mt-2 text-sm text-muted-foreground">产品闭环 · 用户 / 商家 / 平台</p>
-          </div>
-          <div class="stat-num bg-background px-6 py-7">
-            <p class="text-3xl font-bold tracking-tight sm:text-4xl" data-count="100" data-unit="%">100<span class="u">%</span></p>
-            <p class="mt-2 text-sm text-muted-foreground">引用可溯源</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- 为什么是我们：团队 -->
-      <div class="mx-auto max-w-5xl px-6 mt-16 md:mt-20" data-animate>
-        <div class="rounded-2xl border border-border p-8 md:p-10" style="background-image: radial-gradient(80% 50% at 50% 0%, rgb(26,26,26) 0%, transparent 70%)">
-          <div class="flex flex-wrap items-center gap-4">
-            <span class="inline-block rounded-full border border-white/30 px-4 py-1.5 text-xs font-medium tracking-wide">为什么是我们</span>
-            <span class="inline-flex items-center rounded-full bg-white px-3 py-1 text-[11px] font-semibold uppercase tracking-widest text-black">核心 1 人 + 3 位合伙人</span>
-          </div>
-          <h2 class="mt-5 text-2xl font-bold tracking-tight sm:text-3xl">技术能落地，行业有人带</h2>
-          <p class="mt-3 max-w-3xl text-muted-foreground leading-relaxed">构窗不是技术团队闭门造车。技术上，已独立完成 AI 产品从 0 到 1 的搭建并上线运营（Agent / RAG / 后端 / 小程序）；行业上，产业合伙人扎根云南门窗产业，手握本地商家与上游型材供应链资源。门窗是高度非标、区域性极强的赛道，纯技术或纯行业都做不成——技术能落地，行业有人带，这个组合正好补上彼此的短板。</p>
-          <div class="mt-7 grid gap-px overflow-hidden rounded-xl border border-border bg-border md:grid-cols-2">
-            <div class="bg-background p-6">
-              <div class="flex flex-wrap items-center gap-2">
-                <p class="text-base font-semibold">任德荣</p>
-                <span class="inline-flex items-center rounded-full bg-white px-3 py-1 text-[11px] font-semibold tracking-wide text-black">核心创始人 / CEO</span>
-              </div>
-              <p class="mt-2 font-mono text-[11px] text-muted-foreground">北京科技大学 · 生物医学工程</p>
-              <p class="mt-3 text-sm text-muted-foreground leading-relaxed">机器学习与深度学习实践，AI-Agent 架构与后端工程开发；独立完成构窗从 0 到 1 的全栈搭建。</p>
-              <p class="mt-3 text-xs font-medium text-foreground">Agent 开发 · AI-Agent · 后端核心</p>
-            </div>
-            <div class="bg-background p-6">
-              <div class="flex flex-wrap items-center gap-2">
-                <p class="text-base font-semibold">陆欣然</p>
-                <span class="inline-block rounded-full border border-white/30 px-3 py-1 text-[11px] font-medium tracking-wide text-muted-foreground">技术合伙人</span>
-              </div>
-              <p class="mt-2 font-mono text-[11px] text-muted-foreground">香港中文大学 · 大数据</p>
-              <p class="mt-3 text-sm text-muted-foreground leading-relaxed">数据处理、知识图谱、RAG 检索系统。</p>
-              <p class="mt-3 text-xs font-medium text-foreground">知识库 · RAG · 数据处理</p>
-            </div>
-            <div class="bg-background p-6">
-              <div class="flex flex-wrap items-center gap-2">
-                <p class="text-base font-semibold">吴同飞</p>
-                <span class="inline-block rounded-full border border-white/30 px-3 py-1 text-[11px] font-medium tracking-wide text-muted-foreground">产业合伙人</span>
-              </div>
-              <p class="mt-2 font-mono text-[11px] text-muted-foreground">云南外事外语学院 · 建筑室内设计</p>
-              <p class="mt-3 text-sm text-muted-foreground leading-relaxed">昆明凯乐门窗有限公司创始人，深耕本地建材市场，商家资源丰富。</p>
-              <p class="mt-3 text-xs font-medium text-foreground">商家 BD · 行业落地 · 业务操盘</p>
-            </div>
-            <div class="bg-background p-6">
-              <div class="flex flex-wrap items-center gap-2">
-                <p class="text-base font-semibold">李厚泽</p>
-                <span class="inline-block rounded-full border border-white/30 px-3 py-1 text-[11px] font-medium tracking-wide text-muted-foreground">产业合伙人</span>
-              </div>
-              <p class="mt-2 font-mono text-[11px] text-muted-foreground">中国人民公安大学 · 管理</p>
-              <p class="mt-3 text-sm text-muted-foreground leading-relaxed">云南福铝铝业业务总经理，熟悉上游供应链与型材生产。</p>
-              <p class="mt-3 text-xs font-medium text-foreground">上游供应链 · 工厂资源</p>
-            </div>
-          </div>
-          <p class="mt-6 text-xs text-muted-foreground">核心团队全职投入，可到岗上海 / 北京现场办公；产业合伙人依托云南本地商家与供应链资源支持。</p>
-        </div>
-      </div>
     </section>
 
     <!-- ===== Tech Stack Bar ===== -->
@@ -517,6 +448,24 @@
             <div class="relative pb-16" data-animate>
               <div class="absolute" style="left: -2rem; top: 0.35rem">
                 <div style="width: 11px; height: 11px; border-radius: 50%; background: white; box-shadow: 0 0 8px rgba(255,255,255,0.6), 0 0 20px rgba(255,255,255,0.3); animation: timeline-pulse 2s ease-in-out infinite"></div>
+              </div>
+              <p class="text-sm font-medium text-muted-foreground">2026.08 – 至今</p>
+              <h3 class="mt-3 text-base font-semibold">构窗 · 创始人（全职）</h3>
+              <p class="mt-1 text-sm text-muted-foreground leading-relaxed">独立完成构窗从 0 到 1 的产品搭建并上线运营；主导需求验证与商业落地，推进云南首城样板与商家合作。</p>
+            </div>
+            <!-- 2026.06 — 全域智旅 -->
+            <div class="relative pb-16" data-animate>
+              <div class="absolute" style="left: -2rem; top: 0.35rem">
+                <div style="width: 11px; height: 11px; border-radius: 50%; background: var(--color-muted-foreground)"></div>
+              </div>
+              <p class="text-sm font-medium text-muted-foreground">2026.06 – 2026.07</p>
+              <h3 class="mt-3 text-base font-semibold">全域智旅数字科技有限公司 · AI 应用工程师（RAG / 知识库方向）</h3>
+              <p class="mt-1 text-sm text-muted-foreground leading-relaxed">面向 AI 旅游产品，负责旅游领域语料的清洗与结构化，搭建 RAG 知识库并优化智能体的信息检索链路，让问答能稳定命中真实资料、给出可追溯的回答。</p>
+            </div>
+            <!-- 2026.01 — 贝叶斯生物 -->
+            <div class="relative pb-16" data-animate>
+              <div class="absolute" style="left: -2rem; top: 0.35rem">
+                <div style="width: 11px; height: 11px; border-radius: 50%; background: var(--color-muted-foreground)"></div>
               </div>
               <p class="text-sm font-medium text-muted-foreground">2026.01 – 2026.05</p>
               <h3 class="mt-3 text-base font-semibold">贝叶斯生物 BayesBio · 生信分析师</h3>
@@ -560,117 +509,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- ===== Capabilities Zigzag ===== -->
-    <section id="features" class="py-[calc(24px+4vh)]">
-      <div class="mx-auto max-w-5xl px-6 space-y-20 md:space-y-28">
-
-        <!-- Row 1: Text left, Card right — Analysis pipeline -->
-        <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-16" data-animate>
-          <div>
-            <p class="text-sm font-semibold uppercase tracking-widest text-muted-foreground">分析</p>
-            <h2 class="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">把 NGS 原始数据跑成能交付的结论</h2>
-            <p class="mt-4 text-muted-foreground leading-relaxed">从 Cell Ranger / STAR 到 Seurat / Scanpy：质控、比对、定量、差异分析、富集分析、细胞注释、拟时序与细胞通讯全流程。熟悉 DESeq2、CellChat、Monocle3、AUCell 等工具，交付可复现的分析代码与图表。</p>
-          </div>
-          <div class="relative rounded-2xl overflow-hidden h-80 md:h-96 flex items-center justify-center p-6 bg-black" data-fade-bg>
-            <div class="absolute inset-0 transition-opacity duration-100" style="background: url('img/floral1.webp') center/cover no-repeat; opacity: 0.05"></div>
-            <div class="relative w-full max-w-[260px]">
-              <div class="rounded-2xl bg-background p-5 border border-white/10">
-                <div class="flex items-center justify-between mb-5">
-                  <span class="text-[11px] font-semibold text-gray-100">分析流程</span>
-                  <span class="text-[10px] text-gray-500">Pipeline</span>
-                </div>
-                <div class="space-y-4">
-                  <div class="flex items-start gap-3">
-                    <div class="mt-0.5 h-5 w-5 rounded-full bg-emerald-500/10 flex items-center justify-center flex-shrink-0"><div class="h-1.5 w-1.5 rounded-full bg-emerald-500"></div></div>
-                    <div><p class="text-[11px] font-medium text-gray-200">Cell Ranger 定量</p><p class="text-[9px] text-gray-500 mt-0.5">上游质控与比对</p></div>
-                  </div>
-                  <div class="flex items-start gap-3">
-                    <div class="mt-0.5 h-5 w-5 rounded-full bg-blue-500/10 flex items-center justify-center flex-shrink-0"><div class="h-1.5 w-1.5 rounded-full bg-blue-500"></div></div>
-                    <div><p class="text-[11px] font-medium text-gray-200">DESeq2 差异分析</p><p class="text-[9px] text-gray-500 mt-0.5">差异表达与统计</p></div>
-                  </div>
-                  <div class="flex items-start gap-3">
-                    <div class="mt-0.5 h-5 w-5 rounded-full bg-amber-500/10 flex items-center justify-center flex-shrink-0"><div class="h-1.5 w-1.5 rounded-full bg-amber-500"></div></div>
-                    <div><p class="text-[11px] font-medium text-gray-200">GO / KEGG 富集</p><p class="text-[9px] text-gray-500 mt-0.5">功能富集与通路注释</p></div>
-                  </div>
-                  <div class="flex items-start gap-3">
-                    <div class="mt-0.5 h-5 w-5 rounded-full bg-violet-500/10 flex items-center justify-center flex-shrink-0"><div class="h-1.5 w-1.5 rounded-full bg-violet-500"></div></div>
-                    <div><p class="text-[11px] font-medium text-gray-200">CellChat 细胞通讯</p><p class="text-[9px] text-gray-500 mt-0.5">拟时序与调控网络</p></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Row 2: Card left, Text right — Retrieval quality -->
-        <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-16" data-animate>
-          <div class="relative rounded-2xl overflow-hidden h-80 md:h-96 flex items-center justify-center p-6 lg:order-none order-last bg-black" data-fade-bg>
-            <div class="absolute inset-0 transition-opacity duration-100" style="background: url('img/floral4.webp') center/cover no-repeat; opacity: 0.05"></div>
-            <div class="relative w-full max-w-[260px]">
-              <div class="rounded-2xl bg-background p-5 border border-white/10">
-                <div class="flex items-center justify-between mb-5">
-                  <span class="text-[11px] font-semibold text-gray-100">三路混合检索</span>
-                  <span class="text-[10px] text-gray-500">Retrieval</span>
-                </div>
-                <div class="space-y-4">
-                  <div class="flex items-start gap-3">
-                    <div class="mt-0.5 h-5 w-5 rounded-full bg-emerald-500/10 flex items-center justify-center flex-shrink-0"><div class="h-1.5 w-1.5 rounded-full bg-emerald-500"></div></div>
-                    <div><p class="text-[11px] font-medium text-gray-200">SQL 结构化检索</p><p class="text-[9px] text-gray-500 mt-0.5">分数段 / 位次 / 招生计划</p></div>
-                  </div>
-                  <div class="flex items-start gap-3">
-                    <div class="mt-0.5 h-5 w-5 rounded-full bg-blue-500/10 flex items-center justify-center flex-shrink-0"><div class="h-1.5 w-1.5 rounded-full bg-blue-500"></div></div>
-                    <div><p class="text-[11px] font-medium text-gray-200">向量语义检索 <span class="font-mono text-[10px] bg-white/10 rounded px-1">RAG</span></p><p class="text-[9px] text-gray-500 mt-0.5">专业 / 院校 / 政策语义召回</p></div>
-                  </div>
-                  <div class="flex items-start gap-3">
-                    <div class="mt-0.5 h-5 w-5 rounded-full bg-violet-500/10 flex items-center justify-center flex-shrink-0"><div class="h-1.5 w-1.5 rounded-full bg-violet-500"></div></div>
-                    <div><p class="text-[11px] font-medium text-gray-200">知识图谱检索 <span class="text-gray-500 font-normal">GraphRAG</span></p><p class="text-[9px] text-gray-500 mt-0.5">院校—专业—选科关系推理</p></div>
-                  </div>
-                </div>
-                <div class="mt-4 grid grid-cols-3 gap-2">
-                  <div class="rounded-lg bg-white/5 p-2 text-center"><p class="text-xs font-bold text-gray-100">17</p><p class="text-[9px] text-gray-500">知识库模块</p></div>
-                  <div class="rounded-lg bg-white/5 p-2 text-center"><p class="text-xs font-bold text-gray-100">多轮</p><p class="text-[9px] text-gray-500">画像收集</p></div>
-                  <div class="rounded-lg bg-white/5 p-2 text-center"><p class="text-xs font-bold text-gray-100">联网</p><p class="text-[9px] text-gray-500">搜索增强</p></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <p class="text-sm font-semibold uppercase tracking-widest text-muted-foreground">建模</p>
-            <h2 class="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">让 AI 从"检索"走到"推理"</h2>
-            <p class="mt-4 text-muted-foreground leading-relaxed">三路混合检索（SQL + 向量 + 知识图谱）、LangGraph 状态机编排、多轮画像收集与意图路由、联网搜索增强。把大模型的能力约束在可控流程里，让输出稳定、可解释、可迭代——而不是每次靠运气。</p>
-          </div>
-        </div>
-
-        <!-- Row 3: Text left, Card right — Data scale -->
-        <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-16" data-animate>
-          <div>
-            <p class="text-sm font-semibold uppercase tracking-widest text-muted-foreground">交付</p>
-            <h2 class="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">可复现、可交接、能上线</h2>
-            <p class="mt-4 text-muted-foreground leading-relaxed">分析用 Snakemake 固化流程，产品用 Flask + Docker 容器化部署到云端。交付的不只是结论，还有能被别人接手、能持续运行的系统和方法学文档。</p>
-          </div>
-          <div class="relative rounded-2xl overflow-hidden h-80 md:h-96 flex items-center justify-center p-6 bg-black" data-fade-bg>
-            <div class="absolute inset-0 transition-opacity duration-100" style="background: url('img/floral7.webp') center/cover no-repeat; opacity: 0.05"></div>
-            <div class="relative w-full max-w-[260px]">
-              <div class="rounded-2xl bg-background p-5 border border-white/10">
-                <div class="flex items-center justify-between mb-2">
-                  <span class="text-[11px] font-semibold text-gray-100">数据规模</span>
-                  <span class="rounded-full bg-emerald-500/10 px-2 py-0.5 text-[9px] font-semibold text-emerald-400">24 省</span>
-                </div>
-                <p class="text-3xl font-bold text-gray-100 tracking-tight">42<span class="text-lg text-gray-500">万+</span></p>
-                <p class="text-[10px] text-gray-500 mt-1">官方投档线数据</p>
-                <div class="mt-4 grid grid-cols-3 gap-2">
-                  <div class="rounded-lg bg-white/5 p-2 text-center"><p class="text-xs font-bold text-gray-100">17</p><p class="text-[9px] text-gray-500">知识库模块</p></div>
-                  <div class="rounded-lg bg-white/5 p-2 text-center"><p class="text-xs font-bold text-gray-100">8+</p><p class="text-[9px] text-gray-500">项目交付</p></div>
-                  <div class="rounded-lg bg-white/5 p-2 text-center"><p class="text-xs font-bold text-gray-100">3 路</p><p class="text-[9px] text-gray-500">混合检索</p></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
     </section>
 
@@ -725,12 +563,144 @@
       </div>
     </section>
 
+    <!-- ===== Capabilities Zigzag ===== -->
+    <section id="features" class="py-[calc(24px+4vh)]">
+      <div class="mx-auto max-w-5xl px-6 space-y-20 md:space-y-28">
+
+        <!-- Row 1: Text left, Card right — 起点 -->
+        <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-16" data-animate>
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-widest text-muted-foreground">起点</p>
+            <h2 class="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">门窗行业的信息差够大</h2>
+            <p class="mt-4 text-muted-foreground leading-relaxed">最早源于和吴同飞的交谈，「大店面真能换来对等客户吗？行业信息差大，用户要花时间了解，能不能像卖车一样线上看、线下体验」。越查越确定，行不通的不是这个念头，而是行业本身：高度非标，量尺、设计、报价、安装层层分离，还得实地测量。一个首次装修的客户，从动念到下单要熬好几个月，全程都在补课——要么被参数绕晕，要么被设计师代做了决定。信息差有多深，溢价和踩坑就有多普遍。起初我们只想做个传统电商式的展示平台，直到我在昆明一家做 AI 旅游产品的公司搭建 RAG 知识库，才意识到：AI 或许能把人从这场信息差里捞出来。</p>
+          </div>
+          <div class="relative rounded-2xl overflow-hidden h-80 md:h-96 flex items-center justify-center p-6 bg-black" data-fade-bg>
+            <div class="absolute inset-0 transition-opacity duration-100" style="background: url('img/floral1.webp') center/cover no-repeat; opacity: 0.05"></div>
+            <div class="relative w-full max-w-[260px]">
+              <div class="rounded-2xl bg-background p-5 border border-white/10">
+                <div class="flex items-center justify-between mb-5">
+                  <span class="text-[11px] font-semibold text-gray-100">行业观察</span>
+                  <span class="text-[10px] text-gray-500">Market</span>
+                </div>
+                <div class="space-y-4">
+                  <div class="flex items-start gap-3">
+                    <div class="mt-0.5 h-5 w-5 rounded-full bg-emerald-500/10 flex items-center justify-center flex-shrink-0"><div class="h-1.5 w-1.5 rounded-full bg-emerald-500"></div></div>
+                    <div><p class="text-[11px] font-medium text-gray-200">高度非标</p><p class="text-[9px] text-gray-500 mt-0.5">尺寸 / 型材 / 玻璃各不相同</p></div>
+                  </div>
+                  <div class="flex items-start gap-3">
+                    <div class="mt-0.5 h-5 w-5 rounded-full bg-blue-500/10 flex items-center justify-center flex-shrink-0"><div class="h-1.5 w-1.5 rounded-full bg-blue-500"></div></div>
+                    <div><p class="text-[11px] font-medium text-gray-200">区域性强</p><p class="text-[9px] text-gray-500 mt-0.5">本地商家与供应链说了算</p></div>
+                  </div>
+                  <div class="flex items-start gap-3">
+                    <div class="mt-0.5 h-5 w-5 rounded-full bg-amber-500/10 flex items-center justify-center flex-shrink-0"><div class="h-1.5 w-1.5 rounded-full bg-amber-500"></div></div>
+                    <div><p class="text-[11px] font-medium text-gray-200">信息不对称</p><p class="text-[9px] text-gray-500 mt-0.5">参数与报价消费者看不懂</p></div>
+                  </div>
+                  <div class="flex items-start gap-3">
+                    <div class="mt-0.5 h-5 w-5 rounded-full bg-violet-500/10 flex items-center justify-center flex-shrink-0"><div class="h-1.5 w-1.5 rounded-full bg-violet-500"></div></div>
+                    <div><p class="text-[11px] font-medium text-gray-200">链条长</p><p class="text-[9px] text-gray-500 mt-0.5">量尺 / 设计 / 报价 / 安装分离</p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 2: Card left, Text right — 验证 -->
+        <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-16" data-animate>
+          <div class="relative rounded-2xl overflow-hidden h-80 md:h-96 flex items-center justify-center p-6 lg:order-none order-last bg-black" data-fade-bg>
+            <div class="absolute inset-0 transition-opacity duration-100" style="background: url('img/floral4.webp') center/cover no-repeat; opacity: 0.05"></div>
+            <div class="relative w-full max-w-[260px]">
+              <div class="rounded-2xl bg-background p-5 border border-white/10">
+                <div class="flex items-center justify-between mb-5">
+                  <span class="text-[11px] font-semibold text-gray-100">需求验证</span>
+                  <span class="text-[10px] text-gray-500">Validate</span>
+                </div>
+                <div class="space-y-4">
+                  <div class="flex items-start gap-3">
+                    <div class="mt-0.5 h-5 w-5 rounded-full bg-emerald-500/10 flex items-center justify-center flex-shrink-0"><div class="h-1.5 w-1.5 rounded-full bg-emerald-500"></div></div>
+                    <div><p class="text-[11px] font-medium text-gray-200">客户侧</p><p class="text-[9px] text-gray-500 mt-0.5">下单前数月补功课，内容多出自商家</p></div>
+                  </div>
+                  <div class="flex items-start gap-3">
+                    <div class="mt-0.5 h-5 w-5 rounded-full bg-blue-500/10 flex items-center justify-center flex-shrink-0"><div class="h-1.5 w-1.5 rounded-full bg-blue-500"></div></div>
+                    <div><p class="text-[11px] font-medium text-gray-200">商家侧</p><p class="text-[9px] text-gray-500 mt-0.5">反复科普太费时，认可省下沟通成本</p></div>
+                  </div>
+                  <div class="flex items-start gap-3">
+                    <div class="mt-0.5 h-5 w-5 rounded-full bg-amber-500/10 flex items-center justify-center flex-shrink-0"><div class="h-1.5 w-1.5 rounded-full bg-amber-500"></div></div>
+                    <div><p class="text-[11px] font-medium text-gray-200">知识侧</p><p class="text-[9px] text-gray-500 mt-0.5">内容零散且偏销售，缺中立可信来源</p></div>
+                  </div>
+                  <div class="flex items-start gap-3">
+                    <div class="mt-0.5 h-5 w-5 rounded-full bg-violet-500/10 flex items-center justify-center flex-shrink-0"><div class="h-1.5 w-1.5 rounded-full bg-violet-500"></div></div>
+                    <div><p class="text-[11px] font-medium text-gray-200">结论</p><p class="text-[9px] text-gray-500 mt-0.5">痛点两头都在，需求真实</p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-widest text-muted-foreground">验证</p>
+            <h2 class="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">客户和商家，两头都点了头</h2>
+            <p class="mt-4 text-muted-foreground leading-relaxed">想法不能只停在闲聊里。我走访了真正有安装需求的客户——大多数人会在下单前几个月刷自媒体、看公众号补门窗功课，可这些内容几乎都出自商家之手，讲着讲着就偏向卖自己的货，可信度要打折。再走访商家，他们对这个平台比我们还起劲：不用再一遍遍解释什么是断桥铝、防水测试怎么做、K 值是多少，省下的时间能全砸在产品和服务上。痛点两头都在，值得做成产品。</p>
+          </div>
+        </div>
+
+        <!-- Row 3: Text left, Card right — 落地 -->
+        <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-16" data-animate>
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-widest text-muted-foreground">落地</p>
+            <h2 class="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">只把验证过的需求做成产品</h2>
+            <p class="mt-4 text-muted-foreground leading-relaxed">我们把验证过的需求做成了「构窗」：用 AI 科普门窗知识、按需答疑、生成定制方案，替用户省数月决策成本，也替商家省反复科普的力气。通用大模型（豆包、千问、DeepSeek）很强，但没有专业门窗知识库约束，会给出没有工程参考价值的幻觉答案，也给不出真实产品库、真实报价和可信商家——这正是构窗要补的。目前微信小程序已上线，免下载、无感拉起，降低使用门槛；同时开放部分智能体平台的 MCP，借各大模型平台的流量把用户带进来。门窗只是起点——装修里同样高度非标、同样靠信息差定价的品类还有很多，瓷砖、地板、全屋定制、软装，用户面对的是同一套困惑。构窗验证的这套逻辑并不绑定门窗，它可以向外复制到整个装修决策链路。</p>
+          </div>
+          <div class="relative rounded-2xl overflow-hidden h-80 md:h-96 flex items-center justify-center p-6 bg-black" data-fade-bg>
+            <div class="absolute inset-0 transition-opacity duration-100" style="background: url('img/floral7.webp') center/cover no-repeat; opacity: 0.05"></div>
+            <div class="relative w-full max-w-[260px]">
+              <div class="rounded-2xl bg-background p-5 border border-white/10">
+                <div class="flex items-center justify-between mb-2">
+                  <span class="text-[11px] font-semibold text-gray-100">三端闭环</span>
+                  <span class="rounded-full bg-emerald-500/10 px-2 py-0.5 text-[9px] font-semibold text-emerald-400">已上线</span>
+                </div>
+                <p class="text-3xl font-bold text-gray-100 tracking-tight">3<span class="text-lg text-gray-500">端</span></p>
+                <p class="text-[10px] text-gray-500 mt-1">用户 / 商家 / 平台</p>
+                <div class="mt-4 grid grid-cols-3 gap-2">
+                  <div class="rounded-lg bg-white/5 p-2 text-center"><p class="text-xs font-bold text-gray-100">用户</p><p class="text-[9px] text-gray-500">AI 导购</p></div>
+                  <div class="rounded-lg bg-white/5 p-2 text-center"><p class="text-xs font-bold text-gray-100">商家</p><p class="text-[9px] text-gray-500">接单管理</p></div>
+                  <div class="rounded-lg bg-white/5 p-2 text-center"><p class="text-xs font-bold text-gray-100">平台</p><p class="text-[9px] text-gray-500">数据运营</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== 数字统计条 ===== -->
+    <div class="mx-auto max-w-5xl px-6 mt-16 md:mt-20">
+      <div class="grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-border bg-border md:grid-cols-4" data-animate data-stagger>
+        <div class="stat-num bg-background px-6 py-7">
+          <p class="text-3xl font-bold tracking-tight sm:text-4xl" data-count="15">15</p>
+          <p class="mt-2 text-sm text-muted-foreground">LangGraph 节点</p>
+        </div>
+        <div class="stat-num bg-background px-6 py-7">
+          <p class="text-3xl font-bold tracking-tight sm:text-4xl" data-count="2000" data-unit="万+">2000<span class="u">万+</span></p>
+          <p class="mt-2 text-sm text-muted-foreground">知识库字数</p>
+        </div>
+        <div class="stat-num bg-background px-6 py-7">
+          <p class="text-3xl font-bold tracking-tight sm:text-4xl" data-count="3" data-unit="端">3<span class="u">端</span></p>
+          <p class="mt-2 text-sm text-muted-foreground">产品闭环 · 用户 / 商家 / 平台</p>
+        </div>
+        <div class="stat-num bg-background px-6 py-7">
+          <p class="text-3xl font-bold tracking-tight sm:text-4xl" data-count="100" data-unit="%">100<span class="u">%</span></p>
+          <p class="mt-2 text-sm text-muted-foreground">引用可溯源</p>
+        </div>
+      </div>
+    </div>
+
     <!-- ===== Projects ===== -->
     <section id="projects" class="py-[calc(48px+8vh)]">
       <div class="mx-auto max-w-5xl px-6">
         <span class="inline-block rounded-full border border-white/30 px-4 py-1.5 text-xs font-medium tracking-wide mb-6">项目</span>
         <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">做过的产品与分析</h2>
-        <p class="mt-4 max-w-2xl text-muted-foreground leading-relaxed">从 0 到 1 独立交付 AI 产品，也做过面向科研的基因组学数据分析。已上线产品、可复现流程、能交接的代码。</p>
+        <p class="mt-4 max-w-2xl text-muted-foreground leading-relaxed">从 0 到 1 独立交付 AI 产品，也做过面向科研与临床的组学数据分析。已上线产品、可复现流程、能交接的代码。</p>
 
         <!-- 旗舰项目 01：构窗 -->
         <article class="relative mt-12 overflow-hidden rounded-2xl border border-border p-8 md:p-12" style="background-image: radial-gradient(80% 60% at 50% 0%, rgb(26,26,26) 0%, transparent 70%)" data-spot data-animate>
@@ -827,8 +797,26 @@
           </div>
         </article>
 
-        <!-- 科研项目 -->
+        <!-- 工作交付的分析项目 + 科研项目 -->
         <div class="mt-6 grid gap-6 md:grid-cols-3" data-stagger>
+          <article class="relative overflow-hidden rounded-2xl border border-border p-6" data-spot data-tilt>
+            <span class="spot"></span>
+            <p class="font-mono text-[11px] tracking-wide text-muted-foreground">工作 · 2026.01 – 2026.05</p>
+            <h3 class="mt-3 text-base font-semibold">法洛四联症 · 干细胞缺氧相关基因研究</h3>
+            <p class="mt-2 text-sm text-muted-foreground leading-relaxed">基于 GEO 转录组（GSE36761 建模、GSE111230 验证），将差异表达基因与干细胞缺氧相关基因取交集，用 LASSO / SVM-RFE / RF 三种机器学习筛选特征基因，并以 ROC 与表达量双重验证；下游完成 GO / KEGG 富集、PPI 网络、免疫浸润、GSEA、染色体与亚细胞定位、ceRNA 及药物预测 / 分子对接。</p>
+            <div class="chips">
+              <span class="chip">转录组</span><span class="chip">机器学习</span><span class="chip">GO / KEGG</span><span class="chip">免疫浸润</span><span class="chip">药物预测</span>
+            </div>
+          </article>
+          <article class="relative overflow-hidden rounded-2xl border border-border p-6" data-spot data-tilt>
+            <span class="spot"></span>
+            <p class="font-mono text-[11px] tracking-wide text-muted-foreground">工作 · 2026.01 – 2026.05</p>
+            <h3 class="mt-3 text-base font-semibold">急性胰腺炎 · 缺氧与脂质代谢基因研究</h3>
+            <p class="mt-2 text-sm text-muted-foreground leading-relaxed">以 GEO 差异表达基因结合缺氧 + 脂质代谢相关基因筛选候选基因，机器学习（LASSO / SVM-RFE / RF）锁定关键基因并做 ROC / 表达量验证；再基于 CNCB 单细胞数据（HRA006290）完成质控、降维聚类与细胞注释，鉴定腺泡细胞等关键细胞，配合拟时序、细胞通讯、单细胞代谢与 ReactomeGSA 分析，并用 scTenifoldKnk 敲除、Graphban 药物预测 + ADMET / 分子对接探索机制与成药性。</p>
+            <div class="chips">
+              <span class="chip">单细胞</span><span class="chip">UMAP 聚类</span><span class="chip">拟时序</span><span class="chip">scTenifoldKnk</span><span class="chip">分子对接</span>
+            </div>
+          </article>
           <article class="relative overflow-hidden rounded-2xl border border-border p-6" data-spot data-tilt>
             <span class="spot"></span>
             <p class="font-mono text-[11px] tracking-wide text-muted-foreground">科研 · 2023.09 – 2025.06</p>
@@ -856,9 +844,69 @@
               <span class="chip">R / Python</span><span class="chip">数据质控</span><span class="chip">统计分析</span>
             </div>
           </article>
+          <article class="relative overflow-hidden rounded-2xl border border-border p-6" data-spot data-tilt>
+            <span class="spot"></span>
+            <p class="font-mono text-[11px] tracking-wide text-muted-foreground">硕士期间 · 校龙舟队</p>
+            <h3 class="mt-3 text-base font-semibold">北京科技大学龙舟队 · 队长</h3>
+            <p class="mt-2 text-sm text-muted-foreground leading-relaxed">硕士期间担任北京科技大学龙舟队队长，带领队伍参加珠三角高校龙舟交流赛，获得二等奖。</p>
+            <div class="chips">
+              <span class="chip">龙舟队队长</span><span class="chip">珠三角高校交流赛</span><span class="chip">二等奖</span>
+            </div>
+          </article>
         </div>
       </div>
     </section>
+
+    <!-- ===== 为什么是我们：团队 ===== -->
+    <div id="why-us" class="mx-auto max-w-5xl px-6 mt-16 md:mt-20" data-animate>
+      <div class="rounded-2xl border border-border p-8 md:p-10" style="background-image: radial-gradient(80% 50% at 50% 0%, rgb(26,26,26) 0%, transparent 70%)">
+        <div class="flex flex-wrap items-center gap-4">
+          <span class="inline-block rounded-full border border-white/30 px-4 py-1.5 text-xs font-medium tracking-wide">为什么是我们</span>
+          <span class="inline-flex items-center rounded-full bg-white px-3 py-1 text-[11px] font-semibold uppercase tracking-widest text-black">核心 1 人 + 3 位合伙人</span>
+        </div>
+        <h2 class="mt-5 text-2xl font-bold tracking-tight sm:text-3xl">技术能落地，行业有人带</h2>
+        <p class="mt-3 max-w-3xl text-muted-foreground leading-relaxed">构窗不是技术团队闭门造车。技术上，已独立完成 AI 产品从 0 到 1 的搭建并上线运营（Agent / RAG / 后端 / 小程序）；行业上，产业合伙人扎根云南门窗产业，手握本地商家与上游型材供应链资源。门窗是高度非标、区域性极强的赛道，纯技术或纯行业都做不成——技术能落地，行业有人带，这个组合正好补上彼此的短板。</p>
+        <div class="mt-7 grid gap-px overflow-hidden rounded-xl border border-border bg-border md:grid-cols-2">
+          <div class="bg-background p-6">
+            <div class="flex flex-wrap items-center gap-2">
+              <p class="text-base font-semibold">任德荣</p>
+              <span class="inline-flex items-center rounded-full bg-white px-3 py-1 text-[11px] font-semibold tracking-wide text-black">核心创始人 / CEO</span>
+            </div>
+            <p class="mt-2 font-mono text-[11px] text-muted-foreground">北京科技大学 · 生物医学工程</p>
+            <p class="mt-3 text-sm text-muted-foreground leading-relaxed">机器学习与深度学习实践，AI-Agent 架构与后端工程开发；独立完成构窗从 0 到 1 的全栈搭建。</p>
+            <p class="mt-3 text-xs font-medium text-foreground">Agent 开发 · AI-Agent · 后端核心</p>
+          </div>
+          <div class="bg-background p-6">
+            <div class="flex flex-wrap items-center gap-2">
+              <p class="text-base font-semibold">陆欣然</p>
+              <span class="inline-block rounded-full border border-white/30 px-3 py-1 text-[11px] font-medium tracking-wide text-muted-foreground">技术合伙人</span>
+            </div>
+            <p class="mt-2 font-mono text-[11px] text-muted-foreground">香港中文大学 · 大数据</p>
+            <p class="mt-3 text-sm text-muted-foreground leading-relaxed">数据处理、知识图谱、RAG 检索系统。</p>
+            <p class="mt-3 text-xs font-medium text-foreground">知识库 · RAG · 数据处理</p>
+          </div>
+          <div class="bg-background p-6">
+            <div class="flex flex-wrap items-center gap-2">
+              <p class="text-base font-semibold">吴同飞</p>
+              <span class="inline-block rounded-full border border-white/30 px-3 py-1 text-[11px] font-medium tracking-wide text-muted-foreground">产业合伙人</span>
+            </div>
+            <p class="mt-2 font-mono text-[11px] text-muted-foreground">云南外事外语学院 · 建筑室内设计</p>
+            <p class="mt-3 text-sm text-muted-foreground leading-relaxed">昆明凯乐门窗有限公司创始人，深耕本地建材市场，商家资源丰富。</p>
+            <p class="mt-3 text-xs font-medium text-foreground">商家 BD · 行业落地 · 业务操盘</p>
+          </div>
+          <div class="bg-background p-6">
+            <div class="flex flex-wrap items-center gap-2">
+              <p class="text-base font-semibold">李厚泽</p>
+              <span class="inline-block rounded-full border border-white/30 px-3 py-1 text-[11px] font-medium tracking-wide text-muted-foreground">产业合伙人</span>
+            </div>
+            <p class="mt-2 font-mono text-[11px] text-muted-foreground">中国人民公安大学 · 管理</p>
+            <p class="mt-3 text-sm text-muted-foreground leading-relaxed">云南福铝铝业业务总经理，熟悉上游供应链与型材生产。</p>
+            <p class="mt-3 text-xs font-medium text-foreground">上游供应链 · 工厂资源</p>
+          </div>
+        </div>
+        <p class="mt-6 text-xs text-muted-foreground">核心团队全职投入，可到岗上海 / 北京现场办公；产业合伙人依托云南本地商家与供应链资源支持。</p>
+      </div>
+    </div>
 
     <!-- ===== Collaboration ===== -->
     <section id="pricing">
@@ -874,33 +922,33 @@
               <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">团队能力</h2>
               <p class="mt-4 text-white/70 leading-relaxed">技术侧能独立把产品从 0 搭到上线，产业侧能接住本地商家与上游供应链。以下是团队能交付的能力范围。</p>
             </div>
-            <!-- 生信分析 -->
+            <!-- 商业落地 -->
             <div>
             <div class="rounded-2xl bg-black overflow-hidden border border-border" style="background-image: radial-gradient(80% 50% at 50% 0%, rgb(26,26,26) 0%, transparent 70%)">
               <div style="padding: 2.5rem; border-bottom: 1px solid rgba(255,255,255,0.1)">
-                <p class="text-sm font-semibold uppercase tracking-widest text-muted-foreground">生信分析</p>
+                <p class="text-sm font-semibold uppercase tracking-widest text-muted-foreground">商业落地</p>
                 <div class="mt-4" style="display: flex; align-items: baseline; gap: 0.25rem">
-                  <span class="text-4xl font-bold tracking-tight">全流程分析</span>
+                  <span class="text-4xl font-bold tracking-tight">做好做成</span>
                 </div>
-                <p class="mt-3 text-sm text-muted-foreground leading-relaxed">转录组 / 单细胞 / 空间转录组 / GWAS 等方向，从原始数据到可复现的结论。</p>
+                <p class="mt-3 text-sm text-muted-foreground leading-relaxed">把验证过的需求做成能持续运转的生意，而不只是一件上线的产品。</p>
               </div>
               <div style="padding: 2rem 2.5rem">
                 <ul style="display: flex; flex-direction: column; gap: 0.75rem; list-style: none; padding: 0; margin: 0">
                   <li class="text-sm text-muted-foreground" style="display: flex; align-items: center; gap: 0.75rem">
                     <svg style="width: 1rem; height: 1rem; flex-shrink: 0; color: white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-                    数据质控与预处理
+                    用户侧走访与需求验证
                   </li>
                   <li class="text-sm text-muted-foreground" style="display: flex; align-items: center; gap: 0.75rem">
                     <svg style="width: 1rem; height: 1rem; flex-shrink: 0; color: white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-                    差异分析 / 富集分析 / 细胞注释
+                    商家筛选与合作机制
                   </li>
                   <li class="text-sm text-muted-foreground" style="display: flex; align-items: center; gap: 0.75rem">
                     <svg style="width: 1rem; height: 1rem; flex-shrink: 0; color: white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-                    拟时序 / 细胞通讯 / 基因调控网络
+                    变现模式：成交佣金 + 返现激励
                   </li>
                   <li class="text-sm text-muted-foreground" style="display: flex; align-items: center; gap: 0.75rem">
                     <svg style="width: 1rem; height: 1rem; flex-shrink: 0; color: white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-                    可复现代码 + 图表 + 方法学说明
+                    单城样板跑通，可向多城复制
                   </li>
                 </ul>
                 <a href="#contact" class="mt-6 inline-flex items-center rounded-full border border-white/30 px-5 py-2 text-sm font-medium text-white hover:bg-white/10 transition-colors" style="display: inline-flex">聊聊合作</a>
@@ -915,7 +963,7 @@
                 <div class="mt-4">
                   <span class="text-4xl font-bold tracking-tight">从 0 到 1</span>
                 </div>
-                <p class="mt-3 text-sm text-muted-foreground leading-relaxed">从检索到编排到部署，把 AI 能力做成稳定可用的产品，而不是一次性的 demo。</p>
+                <p class="mt-3 text-sm text-muted-foreground leading-relaxed">从检索到编排到部署，具备把 AI 想法从 0 到 1 做成稳定可用、能落地的产品的能力，而不是一次性的 demo。</p>
               </div>
               <div style="padding: 2rem 2.5rem">
                 <ul style="display: flex; flex-direction: column; gap: 0.75rem; list-style: none; padding: 0; margin: 0">
@@ -955,9 +1003,13 @@
     <section id="contact" class="py-[calc(48px+8vh)]">
       <div id="contact-card" class="relative mx-auto max-w-2xl text-center rounded-2xl bg-black border border-border p-8 md:p-12" style="box-shadow: 0 -20px 50px -15px rgba(255,255,255,0.05); background-image: radial-gradient(80% 50% at 50% 0%, rgb(26,26,26) 0%, transparent 70%)" data-animate>
           <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">聊聊合作，或者只是打个招呼</h2>
-          <p class="mt-4 text-lg text-muted-foreground">如果你在找既懂数据分析、又能独立把 AI 产品做出来的人——无论是项目合作，还是聊构窗的孵化与投资，我们大概率聊得来。</p>
+          <p class="mt-4 text-lg text-muted-foreground">我正在为构窗寻找天使轮融资与产业合作方。如果你在关注早期 AI 应用，或者手上有门窗 / 家装产业资源，我们大概率聊得来。</p>
           <div class="mt-10" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.9rem">
-            <a class="contact-link primary" href="mailto:825552394@qq.com" data-magnetic>
+            <a class="contact-link primary" href="https://www.render-on.com" target="_blank" rel="noopener" data-magnetic>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.5 3.75 5.6 3.75 9s-1.25 6.5-3.75 9c-2.5-2.5-3.75-5.6-3.75-9S9.5 5.5 12 3z"/></svg>
+              www.render-on.com
+            </a>
+            <a class="contact-link" href="mailto:825552394@qq.com" data-magnetic>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><rect x="2.5" y="4.5" width="19" height="15" rx="3"/><path stroke-linecap="round" stroke-linejoin="round" d="m3 7 9 6 9-6"/></svg>
               825552394@qq.com
             </a>
